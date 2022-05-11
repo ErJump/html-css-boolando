@@ -16,7 +16,7 @@ img{
     padding: 15px 0;
     position: fixed;
     width: 100%;
-    z-index: 3;
+    z-index: 4;
     top:0
 }
 
@@ -63,12 +63,7 @@ main {
     position: relative;
 }
 
-main section{
-    background-color: cyan;
-}
-
 .container{
-    background-color: red;
     display: flex;
     justify-content: space-around;
     width: 70%;
@@ -78,11 +73,88 @@ main section{
 }
 
 .card{
-    background-color: green;
     width: 30%;
-    height: 400px;
     margin-bottom: 20px;
 }
+
+.product{
+    position: relative;
+}
+
+.figure {
+    position: relative;
+    max-width: 100%;
+}
+.figure .image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: contain;
+  z-index: -1;
+}
+.figure:hover img.image-hover {
+  z-index: 2;
+}
+
+.heart{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    background-color: white;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    z-index: 3;
+}
+
+.sale{
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    width: 40px;
+    line-height: 20px;
+    text-align: center;
+    z-index: 3;
+}
+
+.sustainable{
+    position: absolute;
+    bottom: 50px;
+    left: 42px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    width: 80px;
+    line-height: 20px;
+    text-align: center;  
+    z-index: 3;  
+}
+
+.brand{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.new-price{
+    color: red;
+    font-size: 12px;
+}
+
+.old-price{
+    font-size: 12px;
+}
+
+.description span{
+    display: inline-block;
+}
+
+
 
 /* footer */
 
