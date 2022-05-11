@@ -27,20 +27,25 @@ img{
     justify-content: space-between;
 }
 
-ul{
-    text-align: center;
-}
-
-li{
+.menu li{
     display: inline-block;
     list-style: none;
 }
 
-li a{
+.menu li a{
     text-decoration: none;
     display: inline-block;
-    padding: 6px;
+    padding: 6px 6px 0 0;
     color: white;
+}
+
+li a:hover{
+    text-decoration: underline;
+}
+
+.icons i:hover{
+    cursor: pointer;
+    color: black;
 }
 
 .logo img{
@@ -65,7 +70,7 @@ main {
 
 .container{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 70%;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -105,6 +110,10 @@ main {
     text-align: center;
     line-height: 40px;
     z-index: 3;
+}
+
+.heart:hover{
+    color: red;
 }
 
 .sale{
@@ -162,6 +171,7 @@ h2{
 
 .old-price{
     font-size: 12px;
+    text-decoration: line-through;
 }
 
 .description span{
@@ -172,23 +182,50 @@ h2{
 
 /* footer */
 
+footer{
+    background-color: black;
+}
+
 footer section{
     height: 80px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    color: white;
 }
 
 .footer-content{
     width: 70%;
-    background-color: #7fffd4;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.footer-content div{
-    background-color: #ffb6c1;
-    padding: 3px;
+.footer-first li{
+    display: inline-block;
+    list-style: none;
+}
+
+.footer-first a{
+    text-decoration: none;
+    padding-right: 6px;
+    color: white;
+}
+
+.footer-first h3{
+    font-size: 16px;
+}
+
+.size-fix{
+    font-size: 12px;
+}
+
+.socials{
+    text-align: center;
+}
+
+.socials i:hover{
+    cursor: pointer;
+    color: #ff6900;
 }
