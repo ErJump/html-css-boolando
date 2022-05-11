@@ -133,12 +133,26 @@ main {
     z-index: 3;  
 }
 
+.sustainable-special{
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    background-color: green;
+    color: white;
+    font-size: 12px;
+    width: 80px;
+    line-height: 20px;
+    text-align: center;  
+    z-index: 3;  
+}
+
 .brand{
     font-size: 12px;
 }
 
 h2{
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .new-price{
