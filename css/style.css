@@ -17,7 +17,8 @@ img{
     position: fixed;
     width: 100%;
     z-index: 4;
-    top:0
+    top: 0;
+    box-shadow: 0 1px 3px #666666;  
 }
 
 .head-content{
@@ -97,7 +98,7 @@ main {
   object-fit: contain;
   z-index: -1;
 }
-.figure:hover img.image-hover {
+.figure:hover img.image-hover{
   z-index: 2;
 }
 
